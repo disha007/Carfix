@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" /> 
+    
+<title>Carfix - About</title>
+
+<link href="styles/style.css"           rel="stylesheet" type="text/css">
+<link href="styles/framework.css"       rel="stylesheet" type="text/css">
+<link href="styles/font-awesome.css"    rel="stylesheet" type="text/css">
+<link href="styles/animate.css"         rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jqueryui.js"></script>
+<script type="text/javascript" src="scripts/framework-plugins.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="scripts/API.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+</head>
+
+<body class="dual-sidebar"> 
+
+<div id="preloader">
+	<div id="status">
+        <h3 class="center-text">Welcome</h3>
+        <p class="center-text smaller-text">
+            We're loading the content, give us a second. This won't take long!
+        </p>
+    </div>
+</div>
+    
+<div class="gallery-fix"></div> <!-- Important for all pages that have galleries or portfolios -->
+    
+<div id="header-fixed">
+    <a class="open-left-sidebar" href="#"><i class="fa fa-navicon"></i></a>
+    <p class="headerText"><i class="fa fa-info-circle"></i> About</p>
+    <a class="open-right-sidebar" href="#"><i class="fa fa-envelope-o"></i></a>
+</div>    
+            
+<div class="all-elements">
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">        
+           
+            
+            <div class="sidebar-logo">
+                <img src="images/logo-dark.jpg" alt="img">
+            </div>
+        
+            <p class="sidebar-divider">Navigation</p>
+            
+           
+            <div class="sidebar-menu">
+
+                <a class="menu-item" href="index.html">
+                    <i class="fa fa-home"></i>
+                    <em>Home</em>
+
+                </a>
+                <a href="login.html" class="menu-item login_BTN">
+                    <i class="fa fa-sign-in"></i>
+                    <em>Login</em>
+
+                </a>
+
+                <a class="menu-item register_BTN" href="register.html">
+                    <i class="fa fa-pencil-square-o"></i>
+                    <em>Register</em>
+                </a>
+                <a class="menu-item" href="reservation.html">
+                    <i class="fa fa-calendar"></i>
+                    <em>Reservation</em>
+                </a>
+                <a class="menu-item" href="mycarfix.html">
+                    <i class="fa fa fa-credit-card"></i>
+                    <em>My Carfix</em>
+                </a>
+                <a class="menu-item" href="offers.html">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    <em>Offers</em>
+                </a>
+                <a class="menu-item" href="allbrands.html">
+                    <i class="fa fa-flag-o"></i>
+                    <em>All Brands</em>
+                </a>
+                <a class="menu-item" href="spareparts.html">
+                    <i class="fa fa-cubes"></i>
+                    <em>Spare Parts</em>
+                </a>
+                <a class="menu-item" href="about.html">
+                    <i class="fa fa-info-circle"></i>
+                    <em>About</em>
+                </a>
+                <a class="menu-item" href="vga.html">
+                    <i class="fa fa-car"></i>
+                    <em>Vw Skoda</em>
+                </a>
+
+                <a href="#" class="menu-item logout_BTN" id="logout_BTN">
+                    <i class="fa fa-sign-out"></i>
+                    <em>Logout</em>
+
+                </a>
+
+                <a class="menu-item" href="#" id="closeApp">
+                    <i class="fa fa-times"></i>
+                    <em>Close App</em>
+                </a>
+            </div>
+            
+
+            <p class="sidebar-footer">
+           Copyright <a href="http://www.itforcegroup.com" target="_blank"> It Force</a> 2016.
+            </p>
+            
+        </div>
+        
+        <!--Right Sidebar -->
+        
+        <div class="snap-drawer snap-drawer-right">
+
+
+            <div class="sidebar-logo">
+                <img src="images/logo-dark.jpg" alt="img">
+            </div>
+
+            <p class="sidebar-divider">Contact Us</p>
+
+            <div class="sidebar-menu">
+                <a class="menu-item" href="https://www.facebook.com/carfixph/">
+                    <i class="fa fa-facebook"></i>
+                    <em>Facebook</em>
+                </a>
+                <a class="menu-item" href="tel:+201000087832">
+                    <i class="fa fa-phone"></i>
+                    <em>Call Us</em>
+                </a>
+                <a class="menu-item" href="mailto:info@carfix-ph.com">
+                    <i class="fa fa-envelope-o"></i>
+                    <em>Mail Us</em>
+                </a>
+
+            </div>
+
+            <p class="sidebar-divider">Send Message</p>
+
+            <div class="container ">
+                <div class="sidebar-form contact-form ">
+
+                    <em>
+                        Your message is important to us.
+                    </em>
+
+
+                    <div class="formFieldWrap">
+                        <input onfocus="if (this.value=='Name') this.value = ''" onblur="if (this.value=='') this.value = 'Name'" type="text" value="Name" class="contactField" id="contactNameField" />
+                    </div>
+                    <div class="formFieldWrap">
+                        <input onfocus="if (this.value == 'Mobile') this.value = ''" onblur="    if (this.value == '') this.value = 'Mobile'" type="text" value="Mobile" class="contactField" id="contactMobileField" />
+                    </div>
+                    <div class="formFieldWrap">
+                        <input onfocus="if (this.value=='Email') this.value = ''" onblur="if (this.value=='') this.value = 'Email'" type="text" value="Email" class="contactField" id="contactEmailField" />
+                    </div>
+                    <div class="formTextareaWrap">
+                        <textarea onfocus="if (this.value=='Message') this.value = ''" onblur="if (this.value=='') this.value = 'Message'" class="contactTextarea" id="contactMessageTextarea">Message</textarea>
+                    </div>
+                    <div class="formSubmitButtonErrorsWrap">
+                        <input type="button" class="buttonWrap button button-green contactSubmitButton" id="contact_BTN" value="SUBMIT" />
+                    </div>
+
+                </div>
+            </div>
+            <p class="sidebar-divider">Branches</p>
+            <div class="container ">
+                <div class="sidebar-form contact-form ">
+                    <b><i class="fa fa-map-marker"></i> Moharram bek branch</b>
+                    <p>20 al Kabary fast Rd next to Moharram Bek Traffic department </p>
+                    <b><i class="fa fa-map-marker"></i> El Agamy branch</b>
+                    <p>El Agamy  Kilo 21 inside Total petrol station </p>
+                </div>
+            </div>
+
+            <p class="sidebar-footer">
+                Copyright <a href="http://www.itforcegroup.com" target="_blank"> It Force</a> 2016.
+            </p>
+
+        </div>
+        
+        
+        
+        <div id="content" class="snap-content">
+            <div class="content">
+            <div class="header-clear-large" style="height:50px"></div>
+            <!--Page content goes here, fixed elements go above the all elements class-->
+                
+                <div class="portfolio-one">
+                    <div class="portfolio-item container">
+
+                        <img src="images/pictures/about.jpg" alt="img" class="responsive-image image-fullscreen" >
+
+                        <h4>ABOUT US</h4>
+
+                        <p>
+                            Servicing a vehicle is more than fixing parts and sending our customers on down the road. We offer the facilitation you need to travel with confidence and safety. Our experienced, professional technicians understand every car repair, and every customer is different from the last and we strive to redefine what servicing your vehicle means to you.
+                        </p>
+
+                        <p>
+                            Although our most popular car repairs are oil changes, brake services, tire services and battery installations, our auto service experts are fully trained to perform shocks, struts, steering and suspension repairs and replacements, state inspections, aftermarket upgrades and everything in between.
+                        </p>
+                        <p>With multiple service locations and expert technicians, we simply take care of your car.</p>
+                        <ul style="list-style:circle; margin-left:30px">
+                            <li>State-of-the-art facilities, diagnostic and repair equipment.</li>
+                            <li>Qualified and certified technicians.</li>
+                            <li>Knowledgeable and friendly service personnel.</li>
+                            <li>Competitive prices for maintenance and repairs.</li>
+                            <li>Seven Days Service at selected location.</li>
+                        </ul>
+
+                        <h4 class="mt-20">HISTORY</h4>
+                        <p>
+                            Our Company was established in 2009 specialized in the VAG group from the beginning. we take customer concerns willing to understand every technical issue and offering a multi solution to help achieve customer needs .
+
+                        </p>
+                        <p>
+                            Our policy is to give the customers various options to choose and to determine all the options
+                            in a very short of time to gain our customer trust which helps us to improve our reputation and open more than one branch.
+                        </p>
+
+                    </div>
+                </div>
+                
+                <div class="decoration"></div>
+                
+                <div class="footer">
+                    <p class="center-text">Copyright <a href="http://www.itforcegroup.com" target="_blank"> It Force</a> 2016. All rights reserved.</p>
+                </div>
+                                
+                
+                
+            <!-- End of entire page content-->
+            </div> 
+        </div>
+    </div>  
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+</div>
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
