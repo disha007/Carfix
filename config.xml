@@ -56,6 +56,8 @@
   <icon src="www/images/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
 
 
+  <splash src="splash.png" />
+
   
 
   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
