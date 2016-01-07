@@ -54,21 +54,36 @@
   <icon src="images/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72"/>
   <icon src="images/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
   <icon src="images/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
- 
-  <gap:splash src="images/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
-  <gap:splash src="images/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
-  <gap:splash src="images/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
-  <gap:splash src="images/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
 
-  <gap:splash src="images/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
-  <gap:splash src="images/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
-  <gap:splash src="images/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
-  <gap:splash src="images/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
-  <gap:splash src="images/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
-  <!-- iPhone 6 -->
-  <gap:splash src="images/screen/ios/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
-  <gap:splash src="images/screen/ios/Default-Portrait-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
-  <gap:splash src="images/screen/ios/Default-Landscape-736h@3x.png" gap:platform="ios" width="2208" height="1242" />
+
+  <splash src="splash.png" />
+  <platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="images/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
+    <splash src="images/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
+    <splash src="images/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
+    <splash src="images/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
+
+    <splash src="images/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="images/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="images/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="images/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+  </platform>
+
+  <platform name="ios">
+    <!-- images are determined by width and height. The following are supported -->
+    <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
+    <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
+    <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
+    <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
+    <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
+    <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
+    <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
+    <splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
+  </platform>
+  
 
   <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
@@ -76,17 +91,5 @@
   
   <access origin="*"/>
  
-  <allow-intent href="http://*/*"/>
-  <allow-intent href="https://*/*"/>
-  <allow-intent href="tel:*"/>
-  <allow-intent href="sms:*"/>
-  <allow-intent href="mailto:*"/>
-  <allow-intent href="geo:*"/>
-  <platform name="android">
-    <allow-intent href="market:*"/>
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-  </platform>
+  
 </widget>
